@@ -7,7 +7,7 @@
 
 Matemúsica nació como un desafío académico, pero queremos que su aprendizaje trascienda una calificación. Aspiramos a que sea una herramienta educativa gratuita e interactiva para que nuevos estudiantes puedan observar, experimentar y escuchar las matemáticas.
 
-## ¿Qué es Mission Y = f(x?
+## ¿Qué es Mission Y = f(x)?
 
 Mission Y = f(x) es una aplicación web interactiva que permite explorar funciones matemáticas a través de su representación gráfica y su transformación en sonido.
 
