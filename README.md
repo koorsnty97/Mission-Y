@@ -7,9 +7,9 @@
 
 Matemúsica nació como un desafío académico, pero queremos que su aprendizaje trascienda una calificación. Aspiramos a que sea una herramienta educativa gratuita e interactiva para que nuevos estudiantes puedan observar, experimentar y escuchar las matemáticas.
 
-## ¿Qué es Matemúsica?
+## ¿Qué es Mission Y = f(x?
 
-Matemúsica es una aplicación web interactiva que permite explorar funciones matemáticas a través de su representación gráfica y su transformación en sonido.
+Mission Y = f(x) es una aplicación web interactiva que permite explorar funciones matemáticas a través de su representación gráfica y su transformación en sonido.
 
 La propuesta busca acercar las matemáticas a los estudiantes mediante una experiencia visual y auditiva, invitándolos a experimentar, descubrir patrones y comprender cómo cambia una función.
 
@@ -33,7 +33,7 @@ El estudiante ingresa una expresión matemática, por ejemplo:
 
 `y = 0.5*sin(x)`
 
-Matemúsica dibuja su gráfica en un plano cartesiano.
+Mission Y = f(x) dibuja su gráfica en un plano cartesiano.
 
 Durante la reproducción, el eje horizontal representa el avance del tiempo y los valores verticales determinan la altura musical de las notas.
 
@@ -45,7 +45,7 @@ A estudiantes de enseñanza media y educación superior que deseen explorar func
 
 ## 🚀 Probar Matemúsica
 
-[Acceder a Matemúsica](https://sonrisitaeventos.github.io/matemusica-thiare/)
+[Acceder a Mission Y = f(x)](https://sonrisitaeventos.github.io/matemusica-thiare/)
 
 La aplicación funciona directamente desde un navegador compatible, sin necesidad de instalar programas adicionales.
 
@@ -76,4 +76,4 @@ Proyecto académico de Funciones y Geometría, carrera de Diseño Digital y Web.
 
 Creemos que aprender matemáticas puede ser una experiencia creativa, participativa y entretenida.
 
-**Matemúsica: observa, experimenta y escucha las matemáticas.**
+**Mission Y = f(x): observa, experimenta y escucha las matemáticas.**
