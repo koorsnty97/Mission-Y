@@ -1,4 +1,4 @@
-# 🎶 Mission Y = f (x)
+# 🎶 Mission Y = f(x)
 ### Cuando las matemáticas se convierten en sonido
 
 **Proyecto educativo interactivo de Funciones y Geometría**
