@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Matemúsica</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="#inicio" aria-label="Matemúsica, ir al inicio">♪ matemúsica</a><nav aria-label="Navegación principal"><a href="#como-funciona">Cómo funciona</a><a href="#aprende">Aprende</a><a href="#laboratorio">Laboratorio</a><a href="acerca.html">Acerca del proyecto</a></nav></header>
+<main id="inicio">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy"><p class="eyebrow">MATEMÁTICAS + MÚSICA + CREATIVIDAD</p><h1 id="hero-title">Las matemáticas también se pueden <em>escuchar.</em></h1>
+  <p>Descubre cómo una función se convierte en una gráfica y cómo sus valores pueden transformarse en notas musicales. Explora, experimenta y aprende a tu ritmo.</p>
+  <div class="hero-actions"><a class="cta" href="#laboratorio">♫ Comenzar a explorar</a><a class="secondary-link" href="#como-funciona">¿Cómo funciona?</a></div>
+  <p class="hero-note">Gratis · Sin registro · Desde tu navegador</p></div>
+  <div class="hero-art" aria-hidden="true"><div class="art-label">UNA FUNCIÓN, INFINITAS POSIBILIDADES</div><svg viewBox="0 0 440 250" role="img"><defs><linearGradient id="wave-grad" x1="0" x2="1"><stop stop-color="#ff7a59"/><stop offset="1" stop-color="#7fd1b9"/></linearGradient></defs><path d="M20 125H420M220 15V235" stroke="#66564e" stroke-width="1" stroke-dasharray="4 7"/><path d="M20 125 C50 125 60 40 95 40 S145 210 180 210 S230 40 265 40 S315 210 350 210 S400 125 420 125" fill="none" stroke="url(#wave-grad)" stroke-width="5" stroke-linecap="round"/><circle cx="265" cy="40" r="7" fill="#7fd1b9"/></svg><div class="art-equation">y = 0.5 · sin(x)</div></div>
+</section>
+<section id="como-funciona" class="intro-steps" aria-labelledby="steps-title"><p class="eyebrow">TU PRIMERA EXPERIENCIA</p><h2 id="steps-title">Aprender puede sonar diferente</h2><div class="step-grid">
+<article class="step"><span class="step-number">01</span><h3>Elige una función</h3><p>Comienza con uno de los ejemplos o escribe una expresión matemática.</p></article>
+<article class="step"><span class="step-number">02</span><h3>Observa su gráfica</h3><p>Descubre cómo cambian sus valores mientras recorres el eje horizontal.</p></article>
+<article class="step"><span class="step-number">03</span><h3>Escucha y compara</h3><p>Presiona Reproducir y escucha cómo los valores controlan las notas.</p></article></div></section>
+<section id="aprende" class="learn-guide" aria-labelledby="learn-title">
+<p class="eyebrow">APRENDE JUGANDO</p><h2 id="learn-title">Tu primera función musical</h2>
+<p>No necesitas conocer trigonometría para comenzar. Elige una forma, escucha qué sucede y luego cambia un número. ¡Descubre cómo cambia la música!</p>
+<div class="guide-examples" role="group" aria-label="Funciones para experimentar">
+<button type="button" class="guide-example" data-formula="x/8" data-ymin="-1.5" data-ymax="1.5"><strong>↗ Recta</strong><code>y = x/8</code><span>El tono sube poco a poco.</span></button>
+<button type="button" class="guide-example" data-formula="x^2/16" data-ymin="-1.5" data-ymax="4.5"><strong>⌒ Curva</strong><code>y = x^2/16</code><span>El tono sube cada vez más rápido.</span></button>
+<button type="button" class="guide-example" data-formula="0.5*sin(2*x)" data-ymin="-1.5" data-ymax="1.5"><strong>∿ Onda suave</strong><code>y = 0.5*sin(2*x)</code><span>El tono sube y baja.</span></button>
+<button type="button" class="guide-example" data-formula="0.5*sin(4*x)" data-ymin="-1.5" data-ymax="1.5"><strong>〰 Onda rápida</strong><code>y = 0.5*sin(4*x)</code><span>El tono cambia más veces.</span></button>
+</div>
+<p class="guide-question"><strong>🎧 Tu desafío:</strong> prueba las dos ondas. ¿Qué cambia cuando reemplazas el <code>2</code> por un <code>4</code>? ¿Qué pasa si cambias el <code>0.5</code> por <code>1</code>?</p>
+<div class="guide-how"><h3>¿Cómo escribir una función?</h3><p>Usa <code>x</code> para representar el valor horizontal, <code>*</code> para multiplicar, <code>^</code> para elevar a una potencia y <code>sin(x)</code> para una onda seno. Por ejemplo, <code>2*x</code> significa «dos por x» y <code>x^2</code> significa «x al cuadrado».</p><p><strong>Cómo probarla:</strong> selecciona un ejemplo de arriba, que se cargará automáticamente en el laboratorio, o escribe tu propia fórmula en el campo de función y presiona <strong>▶ Reproducir</strong>.</p><p class="guide-clarity">En Matemúsica la curva no es una grabación del sonido: sus valores controlan la altura de las notas. Por eso puedes escuchar cómo cambia una función.</p></div>
+</section>
+<section id="laboratorio" class="lab-intro" aria-labelledby="lab-title"><p class="eyebrow">LABORATORIO INTERACTIVO</p><h2 id="lab-title">Ahora te toca experimentar</h2><p>Prueba el ejemplo «Seno suave», escucha el resultado y luego cambia la expresión. ¿Qué sucede cuando modificas la amplitud?</p><p class="lab-tip"><strong>Para comenzar:</strong> elige «Seno suave» entre los ejemplos y presiona ▶ Reproducir. El eje horizontal representa el recorrido temporal y el valor vertical determina la altura de las notas.</p></section>
+
+<canvas id="cv"></canvas>
+<div class="bar">
+  <button id="play" class="main">▶ Reproducir</button>
+  <button id="rew" title="Volver al inicio">⏮</button>
+</div>
+<div id="list"></div>
+<button id="add">+ Añadir función</button>
+<p class="help">Escribe y = f(x). El eje x es el tiempo y el eje y es el tono (y = 0 es la nota base; cada unidad sube los semitonos que indiques en Ajustes). Toca la gráfica para elegir desde dónde sonar.
+<br><b>Trigonometría:</b> sin, cos, tan, sec, csc, cot, asin, acos, atan, atan2(y,x), sinh, cosh, tanh, asinh, acosh, atanh, rad(grados), deg(radianes).
+<br><b>Ondas</b> (periodo 2π, como sin): square, saw, tri, pulse(x, ancho de 0 a 1), sinc, noise.
+<br><b>Potencias y logaritmos:</b> sqrt, cbrt, root(x,n), exp, exp2, expm1, pow, ln, log (base 10, o log(x,base)), log2, logb(x,b), log1p, hypot.
+<br><b>Redondeo y signo:</b> abs, floor, ceil, round(x,decimales), trunc, frac, sign, mod(a,b) y el operador %.
+<br><b>Combinatoria y números:</b> fact(n) o n!, gamma, ncr(n,k), npr(n,k), gcd, lcm, fib, isprime, erf.
+<br><b>Curvas útiles:</b> gauss, sigmoid, relu, heaviside, smoothstep(x,a,b), lerp(a,b,t), clamp(x,a,b), step(x,a), min, max, avg.
+<br><b>Lógica y selección:</b> pick(i, a, b, c…), if(cond, a, b), and, or, not, y comparaciones &lt; &gt; &lt;= &gt;= == !=.
+<br><b>Ayudas musicales:</b> semi(n) (semitonos → y), hz(frecuencia) (Hz → y).
+<br><b>Constantes:</b> pi, tau, e, phi, sqrt2, ln2, ln10, inf, rest (silencio). Trigonometría en grados: sind, cosd, tand.
+<br><b>Notación:</b> puedes escribir <code>f(x)=x²−4x+3</code>, <code>y = x^2 - 4x + 3</code> o <code>x2-4x+3</code> (la x seguida de un número se toma como potencia). También se aceptan 2x, √x, π, × y ÷.
+<br>Se pueden pegar nombres y variables: <code>xsin(3x)</code> es x·sin(3x), <code>sin3x</code> es sin(3x) y <code>cos2</code> es cos(2). Además, <code>e-0.2x</code> (pegado, sin espacios) se lee como e^(−0.2x); si quieres restar, escribe <code>e - 0.2x</code> con espacios.</p>
+<div class="chips" id="chips"></div>
+<details>
+  <summary>Ajustes</summary>
+  <div class="grid">
+    <label>Duración (s)<input id="dur" type="number" value="8" min="1" max="60" step="any"></label>
+    <label>Volumen<input id="vol" type="number" value="0.5" min="0" max="1" step="0.05"></label>
+    <label>x mín<input id="x0" type="number" value="0" step="any"></label>
+    <label>x máx<input id="x1" type="number" value="8" step="any"></label>
+    <label>y mín<input id="y0" type="number" value="-1.5" step="any"></label>
+    <label>y máx<input id="y1" type="number" value="1.5" step="any"></label>
+    <label>Nota base (MIDI, 60 = Do central)<input id="base" type="number" value="60" step="any"></label>
+    <label>Semitonos por unidad de y<input id="st" type="number" value="12" step="any"></label>
+    <label>Onda<select id="wave"><option value="triangle">Triángulo</option><option value="sine">Seno</option><option value="square">Cuadrada</option><option value="saw">Sierra</option></select></label>
+    <label class="chk"><input id="q" type="checkbox"> Ajustar al semitono</label>
+  </div>
+</details>
+
+</main>
+<footer class="site-footer">Hecho para explorar, crear y aprender · 🐭 Thiare Ruiz 🐱</footer>
+<script src="script.js"></script>
+<script>
+document.querySelectorAll('.guide-example').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelector('#rew').click();
+    document.querySelector('#x0').value = '0';
+    document.querySelector('#x1').value = '8';
+    document.querySelector('#y0').value = button.dataset.ymin;
+    document.querySelector('#y1').value = button.dataset.ymax;
+    const input = document.querySelector('#list .fn input');
+    if (!input) return;
+    input.value = button.dataset.formula;
+    input.dispatchEvent(new Event('input', {bubbles:true}));
+    document.querySelectorAll('.guide-example').forEach(b => b.classList.toggle('selected', b === button));
+    document.querySelector('#laboratorio').scrollIntoView({behavior:'smooth'});
+    input.focus({preventScroll:true});
+  });
+});
+</script>
+</body>
+</html>

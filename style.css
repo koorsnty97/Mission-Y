@@ -1,0 +1,100 @@
+:root{--bg:#0f0d0c;--fg:#e8e4df;--mut:#8a847d;--line:#2a2623}
+*{box-sizing:border-box}
+body{margin:0 auto;max-width:900px;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.4 system-ui,sans-serif}
+h1{font-size:1.2rem;font-weight:500;font-style:italic;text-align:center;color:var(--mut)}
+canvas{display:block;width:100%;aspect-ratio:16/10;background:#141110;border:1px solid var(--line);border-radius:12px;touch-action:none}
+.bar,.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+button{background:#1c1816;color:var(--fg);border:1px solid #3a3530;border-radius:10px;padding:10px 14px;font:inherit;cursor:pointer}
+button.main{background:#ff7a59;border-color:#ff7a59;color:#1a0f0b;font-weight:600}
+.chips button{padding:6px 10px;font-size:.85rem}
+.fn{display:flex;align-items:center;gap:8px;margin:8px 0}
+.dot{width:14px;height:14px;border-radius:50%;flex:none}
+input,select{width:100%;min-width:0;background:#1c1816;color:var(--fg);border:1px solid #3a3530;border-radius:8px;padding:9px;font:inherit}
+.fn input{font-family:ui-monospace,monospace}
+.err{color:#ff8f8f;font-size:.8rem;margin:-4px 0 4px 22px}
+.help{font-size:.8rem;color:var(--mut)}
+details{margin-top:12px;border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+summary{cursor:pointer;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}
+label{display:flex;flex-direction:column;gap:4px;font-size:.8rem;color:var(--mut)}
+label.chk{flex-direction:row;align-items:center;gap:8px}
+label.chk input{width:auto}
+
+/* Presentación educativa: estilos aislados del simulador original */
+html{scroll-behavior:smooth}
+.site-header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0 28px}
+.site-header .brand{font-size:1.25rem;font-style:italic;font-weight:750;color:#ffb39d;text-decoration:none}
+.site-header nav{display:flex;flex-wrap:wrap;gap:18px}
+.site-header nav a,.secondary-link{color:var(--fg);text-decoration:none;font-size:.9rem}
+.site-header a:hover,.secondary-link:hover{text-decoration:underline}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:32px;align-items:center;padding:46px 0 65px}
+.eyebrow{color:#7fd1b9;letter-spacing:.15em;font-size:.72rem;font-weight:750}
+.hero h1{font-size:clamp(2.2rem,5.4vw,4.1rem);line-height:1.08;font-weight:800;font-style:normal;text-align:left;color:#f7f1eb;letter-spacing:-.045em;margin:16px 0 20px}
+.hero h1 em{color:#ff9477;font-style:normal}
+.hero-copy>p:not(.eyebrow){color:#b7ada5;line-height:1.65}
+.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px;margin-top:28px}
+.cta{display:inline-block;background:#ff7a59;color:#1a0f0b;font-weight:750;text-decoration:none;padding:14px 20px;border-radius:12px}
+.cta:hover{background:#ff977c}
+.hero-note{font-size:.78rem;color:#8a847d!important}
+.hero-art{border:1px solid #3a302d;border-radius:24px;padding:24px 18px;background:radial-gradient(circle at 80% 25%,#18352f 0%,transparent 55%),#191412;box-shadow:0 22px 70px #0005}
+.hero-art svg{width:100%;height:auto;display:block}
+.art-label{font-size:.67rem;letter-spacing:.12em;color:#aaa09a}
+.art-equation{font-family:ui-monospace,monospace;color:#ffae96;text-align:center;font-size:1rem}
+.intro-steps{padding:34px 0 55px;border-top:1px solid var(--line)}
+.intro-steps h2,.lab-intro h2{font-size:clamp(1.6rem,3.4vw,2.4rem);letter-spacing:-.025em;line-height:1.2;margin:10px 0 26px}
+.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.step{border:1px solid #332b27;background:#171311;border-radius:16px;padding:22px}
+.step-number{color:#ff977c;font-weight:800;font-size:1.3rem}
+.step h3{font-size:1.05rem;margin:12px 0 8px}
+.step p{font-size:.9rem;line-height:1.55;color:#b5aaa2;margin:0}
+.lab-intro{padding:22px 0 16px;border-top:1px solid var(--line)}
+.lab-intro>p:not(.eyebrow){color:#b5aaa2;line-height:1.6}
+.lab-tip{background:#1c1a16;border-left:3px solid #7fd1b9;padding:13px 16px;border-radius:0 10px 10px 0}
+.site-footer{font-size:.8rem;color:var(--mut);text-align:center;padding:30px 0 12px}
+#laboratorio{scroll-margin-top:18px}
+@media(max-width:700px){.hero{grid-template-columns:1fr;gap:18px;padding:18px 0 40px}.hero-art{max-width:520px;width:100%}.step-grid{grid-template-columns:1fr}.site-header{align-items:flex-start}.site-header nav{gap:10px}.site-header nav a{font-size:.8rem}.grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Guía interactiva para estudiantes */
+.learn-guide{padding:30px 0 46px;border-top:1px solid var(--line)}
+.learn-guide h2{font-size:clamp(1.7rem,3.6vw,2.5rem);letter-spacing:-.03em;margin:8px 0 12px}
+.learn-guide>p:not(.eyebrow){color:#b7ada5;line-height:1.65}
+.guide-examples{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:22px 0}
+.guide-example{display:flex;flex-direction:column;align-items:flex-start;gap:10px;text-align:left;min-height:152px;padding:16px;background:#1a1513;border:1px solid #40342f;border-radius:14px;transition:border-color .15s,transform .15s}
+.guide-example:hover,.guide-example:focus-visible,.guide-example.selected{border-color:#ff9477}
+.guide-example:hover{transform:translateY(-2px)}
+.guide-example strong{font-size:1rem;color:#ffac95}
+.guide-example code{font-size:.78rem;color:#8cddc8;overflow-wrap:anywhere}
+.guide-example span{font-size:.82rem;line-height:1.4;color:#b7ada5}
+.guide-question{padding:14px 18px;background:#182420;border-left:3px solid #7fd1b9;border-radius:0 12px 12px 0}
+.guide-question code,.guide-how code{color:#9de4d0}
+.guide-how{margin-top:24px;padding:22px;border:1px solid #3b322e;border-radius:16px;background:#161311}
+.guide-how h3{margin:0 0 12px;font-size:1.18rem}
+.guide-how p{color:#b7ada5;line-height:1.65}
+.guide-how p:last-child{margin-bottom:0}
+.guide-clarity{font-size:.85rem}
+#aprende{scroll-margin-top:16px}
+@media(max-width:800px){.guide-examples{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:460px){.guide-examples{grid-template-columns:1fr}.guide-example{min-height:0}}
+
+/* Página informativa del proyecto */
+.about-page{max-width:850px;margin:0 auto}
+.about-hero{text-align:center;padding:60px 15px 56px;background:radial-gradient(ellipse at 50% 30%,#20362e 0%,transparent 55%);border-bottom:1px solid var(--line)}
+.about-hero h1{font-size:clamp(2.8rem,8vw,5rem);font-style:normal;font-weight:850;letter-spacing:-.06em;color:#fff;margin:10px 0}
+.about-hero h1 span{font-size:.55em;vertical-align:middle}
+.about-subtitle{font-size:clamp(1.2rem,3vw,1.8rem);color:#ffac95!important;font-weight:650}
+.about-hero p{color:#b7ada5}
+.about-hero .cta{margin-top:20px}
+.about-section{padding:32px 8px;border-bottom:1px solid var(--line)}
+.about-section h2{font-size:clamp(1.45rem,3.5vw,2rem);letter-spacing:-.025em;margin:0 0 18px}
+.about-section p{color:#c3b9b1;line-height:1.75}
+.about-section code{background:#27211d;padding:3px 7px;border-radius:6px;color:#8cddc8}
+.about-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.about-grid article{background:#191512;border:1px solid #382f2a;padding:18px;border-radius:14px}
+.about-grid h3{margin:0 0 8px;color:#ffb39d;font-size:1rem}
+.about-grid p{margin:0;font-size:.9rem}
+.about-author{text-align:center;border-bottom:0}
+.about-author h2{color:#ffb39d}
+.about-author strong{color:#8cddc8}
+.about-actions{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;padding:20px 0 55px}
+@media(max-width:550px){.about-grid{grid-template-columns:1fr}.about-hero{padding:35px 10px}.about-section{padding:26px 4px}}
