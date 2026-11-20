@@ -43,7 +43,7 @@ De esta manera, el estudiante puede observar cómo una función cambia y escucha
 
 A estudiantes de enseñanza media y educación superior que deseen explorar funciones matemáticas de manera diferente, así como a docentes interesados en incorporar experiencias interactivas a sus clases.
 
-## 🚀 Probar Matemúsica
+## 🚀 Probar Mission Y = f(x)
 
 [Acceder a Mission Y = f(x)](https://sonrisitaeventos.github.io/matemusica-thiare/)
 
